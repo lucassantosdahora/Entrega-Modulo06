@@ -1,0 +1,51 @@
+/* No arquivo table.css */
+
+.table-container {
+  overflow-x: auto;
+  padding: 20px;
+  color: #000000; /* Cor do texto principal, preto */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #f60a0a;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 12px;
+  text-align: left;
+  background-color: #aeffffbd; /* Nova cor de fundo para todas as células */
+  -webkit-text-stroke: 1px #000000; /* Adiciona contorno ao texto */
+}
+
+th {
+  font-weight: bold;
+}
+
+/* Adiciona sombra à tabela */
+.table-container table {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 600px) {
+  th, td {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  tr {
+    margin-bottom: 10px;
+    display: block;
+  }
+}

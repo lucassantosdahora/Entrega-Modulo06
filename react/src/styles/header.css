@@ -1,0 +1,53 @@
+/* No arquivo header.css */
+
+.container-header {
+  background-color: #00000008; /* Fundo mais escuro */
+  box-shadow: 5px 10px 5px #161616d7; /* Sombra mais clara */
+  border-radius: 10px;
+  width: 80%;
+  height: 300px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente dentro da flex container */
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #b8f3eb;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-size: 22px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffb01e; /* Cor diferente ao passar o mouse (hover) */
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+  .container-header {
+    width: 90%; /* Reduz a largura para telas menores */
+    height: 200px; /* Reduz a altura para telas menores */
+  }
+
+  ul {
+    flex-direction: column; /* Altera a direção da flexbox para coluna em telas menores */
+    text-align: center; /* Centraliza o texto na coluna */
+  }
+
+  ul li {
+    margin: 10px 0; /* Adiciona um espaço entre os itens da lista */
+  }
+}
